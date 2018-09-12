@@ -11,7 +11,20 @@ public class Client {
         this.authenticator = a;
     }
 
-    public Request request(String url){
-        return new Request(this, url);
+    public Request request(String url, String verb){
+        return new Request(this, url, verb);
     }
+
+    public void login(){
+
+    }
+    public void logout(){
+
+    }
+
+    public Authenticator getAuthenticator() {
+        return authenticator;
+    }
+
+
 }
